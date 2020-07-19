@@ -1,0 +1,638 @@
+@import url("../../css/font.css");
+/* -------------------------------*/
+body{
+   margin : 0px;
+   padding : 0px;
+   font-family: noto;
+   background-color: #1e1d39;
+}
+a {
+   text-decoration: none; /* 밑줄 없애는 거 */
+   color : #000;
+}
+a:hover {
+   text-decoration: none;
+   color : #000;
+}
+a:visited {
+   text-decoration: none;
+   color : #000;
+}
+input:focus,button:focus{
+   outline: none;
+}
+/* -------------------------------*/
+.lines{
+   width : 500px;
+   height : 490px;
+   /* border : 1px solid #ccc; */
+   border-radius: 5px;
+   /* 화면 정중앙에 맞추기 */
+   position : absolute;
+   top : 50%;
+   left : 50%;
+   margin-top : -355px;
+   margin-left : -250px;
+   background-color: #1f253f;
+}
+.title{
+   height : 40px;
+   text-align: center;
+   line-height: 40px;
+   font-size: 15px;
+   color : #fff;
+}
+.admin_ul{
+   width : 100%;
+   height : 135px;
+   box-sizing: border-box;
+   list-style: none;
+   margin : 0px;
+   padding : 0px;
+}
+.admin_ul > li{
+   width : 100%;
+   height : 45px;
+   text-align: center;
+   line-height: 45px;
+   margin-bottom : 3px;
+}
+.admin_ul > li > input{
+   width : 400px;
+   height : 40px;
+   /* border : 1px solid #ccc; */
+   border-radius: 5px;
+}
+.admin_ul > li > input[type="text"],.admin_ul > li > input[type="password"]{
+    color : #fff;
+}
+.admin_ul > li > input[type="text"]::placeholder,.admin_ul > li > input[type="password"]::placeholder{
+    color : #ccc;
+}
+.id{
+   text-indent: 10px;
+   background-color: transparent;
+   border : 1px solid #fff;
+}
+.pw{
+   text-indent: 10px;
+   background-color: transparent;
+   border : 1px solid #fff;
+}
+.in{
+   background-color: #FA0ABA;
+   color : #fff;
+   font-size: 14px;
+   border : none;
+}
+.label1{
+   width : 100%;
+   height : 50px;
+   line-height: 50px;
+   text-align: center;
+   display : block;
+   font-family: 돋움체;
+   font-size: 13px;
+   color : #fff;
+}
+.admin_ul2{
+   width : 100%;
+   height : 50px;
+   margin : 0px;
+   padding : 0px;
+   list-style: none;
+   line-height: 50px;
+}
+.admin_ul2 > li{
+   width : 180px;
+   height : 40px;
+   position: absolute;
+   margin-left : 10px;
+}
+.admin_ul2 > li:nth-child(2){
+   right : 0px;
+   margin-right : 10px;
+}
+.register{
+   width : 180px;
+   height : 40px;
+   border-radius: 5px;
+   border : none;
+   background-color: #FA0ABA;
+   color : #fff;
+}
+.search{
+   width : 180px;
+   height : 40px;
+   border-radius: 5px;
+   border : none;
+   background-color: #FA0ABA;
+   color : #fff;
+}
+
+/*-----------------------------------------------------------------
+----------------------관리자등록 css------------------------------
+-----------------------------------------------------------------*/
+.admin-register-title{
+  width : 500px;
+  height : 50px;
+  
+  /* background-color: burlywood; */
+}
+.admin-register-title>label{
+  text-align: center;
+  color : #fff;
+  text-decoration: underline;
+  line-height: 50px;
+  font-size: 20px;
+  display: block;
+  width : 100%;
+  height : 50px;
+  margin : 0 auto;
+}
+.admin-register{
+  width : 500px;
+  height : 490px;
+  /* border : 1px solid #ccc; */
+  position: absolute;
+  top : 50%;
+  left : 50%;
+  margin-top : -355px;
+  margin-left : -250px;
+  background-color: #1f253f;
+  /* background-color:antiquewhite; */
+}
+.admin-register>ul{
+  margin : 0px;
+  padding : 0px;
+  list-style: none;
+  width : 500px;
+  height : 150px;
+  margin-top : 20px;
+  color : #fff;
+}
+.admin-register>ul>li{
+  float : left;
+}
+.admin-register>ul>li>label{
+   width : 130px;
+   height : 50px;
+   font-size: 15px;
+   display : block;
+   text-align: center;
+}
+.admin-register>ul>li>input{
+   width : 330px;
+  height : 40px;
+  border : 1px solid #fff;
+  background-color: transparent;
+  border-radius: 5px;
+  text-indent: 10px;
+  color : #fff;
+}
+.admin-register>ul>li>input::placeholder{
+    color : #ccc;
+}
+.admin-register>ul>li:nth-child(odd){
+  width : 130px;
+  height : 50px;
+  line-height: 50px;
+}
+.admin-register>ul>li:nth-child(even){
+  width : 370px;
+  height : 50px;
+  line-height: 50px;
+}
+.admin-register-btn{
+  width : 210px;
+  height : 50px;
+  /* margin : 0 auto; */
+  margin-top : 20px;
+}
+.admin-register-btn>input{
+   width : 180px;
+   height : 40px;
+   border : none;
+   border-radius: 5px;
+   background-color: #FA0ABA;
+   position: absolute;
+   color : #fff;
+}
+.admin-register-btn>input:nth-child(1){
+   left : 10px;
+}
+.admin-register-btn>input:nth-child(2){
+   right : 10px;
+}
+
+/*-----------------------------------------------------------------
+----------------------관리자 패스워드 찾기---------------------------
+-----------------------------------------------------------------*/
+.content > ul > li > label{
+  width : 150px;
+  height : 50px;
+  font-size: 15px;
+  display : inline-block;
+}
+.btn > button{
+  width : 180px;
+  height : 40px;
+  border : none;
+  border-radius: 5px;
+  background-color: #FA0ABA;
+  position: absolute;
+  color : #fff;
+  bottom : 0px;
+}
+.btn > button:nth-child(1){
+  left : 10px;
+}
+.btn > button:nth-child(2){
+  right : 10px;
+}
+.content > ul > li > input{
+  width : 310px;
+  height : 40px;
+  border : 1px solid #fff;
+  background-color: transparent;
+  border-radius: 5px;
+  text-indent: 10px;
+  color : #fff;
+}
+.content > ul > li > input::placeholder{
+    color : #ccc;
+}
+.outline{
+  width : 500px;
+  height : 490px;
+  /* border : 1px solid #ccc; */
+  background-color: #1f253f;
+  border-radius: 5px;
+  position: absolute;
+  top : 50%;
+  left : 50%;
+  margin-top: -355px;
+  margin-left : -250px;
+}
+.logo{
+  width : 100%;
+  height : 200px;
+  background-color:#535185;
+  position: relative;
+  border-radius: 5px;
+}
+.logo > img{
+   width : 200px;
+   height : 150px;
+   top : 50%;
+   left : 50%;
+   margin-top : -75px;
+   margin-left : -100px;
+   position: absolute;
+}
+.title{
+  width : 100%;
+  height : 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+.content{
+  width : 100%;
+  height : 150px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.content>ul{
+  margin : 0px;
+  padding : 0px;
+  width : 100%;
+  height : 150px;
+  list-style: none;
+}
+.content>ul>li:nth-child(odd){
+  width : 150px;
+  height : 50px;
+  line-height: 50px;
+  float : left;
+  text-align: center;
+  color : #fff;
+}
+.content>ul>li:nth-child(even){
+  width : 350px;
+  height : 50px;
+  line-height: 50px;
+  float : left;
+}
+.btn{
+  width : 100%;
+  height : 50px;
+  position: relative;
+}
+.admin-email{
+  display : none;
+}
+
+/*-----------------------------------------------------------------
+----------------------관리자 메인페이지-----------------------------
+-----------------------------------------------------------------*/
+.header{
+   height : 30px;
+}
+.info{
+   margin : 0 auto;
+   width : 1000px;
+   height : 30px;
+   background-color: #1f253f;
+   color : #fff;
+}
+.nav{
+   height : 60px;
+}
+.main-nav{
+   margin : 0 auto;
+   width : 1000px;
+   height : 60px;
+   background-color:#1f253f;
+}
+.main-nav > ul{
+   margin : 0px;
+   padding : 0px;
+   list-style: none;
+   width : 1000px;
+   height : 60px;
+   border-top : 1px solid #FA0ABA;
+   border-bottom : 1px solid #FA0ABA;
+   box-sizing: border-box;
+}
+.main-nav > ul > li{
+   width : 125px;
+   height : 60px;
+   line-height: 60px;
+   text-align: center;
+   font-weight: bold;
+   color : #fff;
+   float : left;
+   font-size: 14px;
+}
+.main-nav > ul > li:hover{
+   background-color: #FA0ABA;
+}
+
+.contents{
+   height : 800px;
+   /* background-color: mediumpurple; */
+}
+.footer{
+   height : 40px;
+   background-color :#1f253f;
+}
+.footer-content{
+   width : 1000px;
+   height : 40px;
+   margin : 0 auto;
+   text-align: center;
+   line-height: 40px;
+   color : #fff;
+}
+
+/*-----------------------------------------------------------------
+----------------------배너관리-----------------------------
+-----------------------------------------------------------------*/
+.banner-list{
+   margin : 0 auto;
+   padding-top : 10px;
+   width : 1000px;
+   height : auto;
+   box-sizing: border-box;
+}
+.banner-list > ul{
+   margin : 0px;
+   padding : 0px;
+   list-style: none;
+   width : 1000px;
+   height : 45px;
+   background-color: #1f253f;
+}
+.banner-list > ul > li{
+   height : 45px;
+   float : left;
+   /* border : 1px solid #ccc; */
+   box-sizing: border-box;
+   font-size : 12px;
+   line-height: 45px;
+   color : #fff;
+   border-bottom : 1px solid #ccc;
+}
+.banner-list > ul:nth-child(1){
+   text-align: center;
+}
+.banner-list > ul > li:nth-child(1){
+   text-align: center;
+   width : 80px;
+}
+.banner-list > ul > li:nth-child(2){
+   text-indent: 10px;
+   width : 150px;
+}
+.banner-list > ul > li:nth-child(3){
+   text-indent: 10px;
+   width : 200px;
+   white-space: nowrap;
+   word-wrap: break-word;
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
+.banner-list > ul > li:nth-child(4){
+   text-align: center;
+   width : 240px;
+}
+.banner-list > ul > li:nth-child(5){
+   text-align: center;
+   width : 180px;
+}
+.banner-list > ul > li:nth-child(6){
+   text-align: center;
+   width : 150px;
+}
+.banner-list > ul:nth-child(1){
+   background-color:#FA0ABA;
+   color : #fff;
+   font-size : 14px;
+   line-height: 45px;
+   font-weight: bold;
+}
+.banner-list > ul > li > button {
+   width : 50px;
+   height : 25px;
+   border : none;
+   border-radius: 5px;
+   color : #fff;
+}
+.banner-list > ul > li > img{
+   margin-top : 1px;
+   width : 200px;
+   height : 40px;
+   cursor: pointer;
+}
+.modify{
+   background-color: #FA0ABA;
+}
+.delete {
+   background-color: #aaa;
+}
+.banner-list-title{
+   width : 300px;
+   height : 70px;
+   font-size: 30px;
+   text-indent: 20px;
+   line-height: 70px;
+   border-bottom: 2px solid #FA0ABA;
+   color : #fff;
+}
+.banner-section{
+   margin : 0 auto;
+   width : 1000px;
+   height : auto;
+}
+.banner-section > button{
+   width : 100px;
+   height : 40px;
+   background-color: #FA0ABA;
+   border: none;
+   border-radius: 5px;
+   color : #fff;
+   float : right;
+   margin-top : 10px;
+}
+.banner-preview{
+   width : 1000px;
+   height : 400px;
+   overflow: auto;
+   position: absolute;
+   top : 50%;
+   left : 50%;
+   margin-top : -200px;
+   margin-left : -500px;
+   display : none;
+}
+.banner-preview-close{
+   width : 30px;
+   height : 30px;
+   display : block;
+   background-image: url('../shop/icon/allicon.svg');
+   background-position: 30px;
+   float : right;
+   cursor: pointer;
+}
+
+/* 배너 추가 */
+.banner-insert-detail{
+   margin : 0 auto;
+   padding-top : 10px;
+   box-sizing: border-box;
+   width : 1000px;
+   height : 500px;
+   position: relative;
+}
+.banner-insert-detail > label {
+   font-size : 11px;
+   color : red;
+   position: absolute;
+   right : 100px;
+}
+.banner-insert-detail > ul{
+   margin : 0 auto;
+   margin-top : 20px;
+   padding : 0px;
+   list-style: none;
+   width : 800px;
+   height : 240px;
+   border-top : 1px solid #ccc;
+   border-bottom : 1px solid #ccc;
+   color : #fff;
+}
+.banner-insert-detail > ul > li{
+   /* border : 1px solid #ccc; */
+   box-sizing: border-box;
+}
+.banner-insert-detail > ul > li:nth-child(odd){
+   width : 200px;
+   height : 60px;
+   line-height: 60px;
+   float : left;
+   text-align: center;
+   font-size : 16px;
+   font-weight: 400;
+   /* text-decoration: underline; */
+}
+.banner-insert-detail > ul > li:nth-child(even){
+   width : 600px;
+   height : 60px;
+   float : left;
+   box-sizing: border-box;
+   line-height: 60px;
+   position: relative;
+}
+.banner-insert-detail > ul > li > input[type="text"] {
+   width : 590px;
+   height : 40px;
+   border : 1px solid #ccc;
+   border-radius: 5px;
+   margin-top : 5px;
+   background-color: transparent;
+   text-indent: 10px;
+   color : #ccc;
+}
+.banner-insert-detail > ul > li > input[type="file"]{
+   padding-top : 20px;
+   box-sizing: border-box;
+}
+.banner-insert-detail > button{
+   width : 100px;
+   height : 40px;
+   border : none;
+   border-radius: 5px;
+   background-color: #FA0ABA;
+   position: absolute;
+   top : 350px;
+   right : 110px;
+   color : #fff;
+}
+
+/* 배너 수정 */
+.banner-use{
+   margin-top : 20px;
+   width : 20px;
+   height : 20px;
+}
+.banner-modify-detail > ul{
+   height : 300px;
+}
+.banner-modify-detail > button{
+   top : 340px;
+}
+.banner-image-del{
+   width : 20px;
+   height : 20px;
+   display : inline-block;
+   border-radius: 5px;
+   border : 1px solid #ccc;
+   background-image: url('../shop/icon/allicon.svg');
+   background-position: 20px;
+   background-size: cover;
+   position: absolute;
+   top : 15px;
+   left : 140px;
+   cursor: pointer;
+}
+.popup-insert-btn{
+   width : 100px;
+   height : 40px;
+   border : none;
+   border-radius: 5px;
+   background-color: #FA0ABA;
+   margin-top : 10px;
+   float : right;
+   color : #fff;
+}

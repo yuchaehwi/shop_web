@@ -1,0 +1,32 @@
+.popup-insert-section{
+   height : 850px;
+}
+.popup-list{
+   margin : 0 auto;
+   width : 1000px;
+   height : 800px;
+}
+
+/* 팝업추가 */
+textarea{
+   width : 600px;
+   height : 100px;
+}
+li > label{
+   width : 50px;
+   height : 30px;
+   display : inline-block;
+   text-align: center;
+}
+input[type="number"]{
+   width : 200px;
+   height : 40px;
+   border : 1px solid #ccc;
+   border-radius: 5px;
+   background-color: transparent;
+   text-indent: 10px;
+   color : #ccc;
+}
+#cke_1_resizer{
+   display : none;
+}

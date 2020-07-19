@@ -1,0 +1,292 @@
+.membership{
+   height : 1290px;
+   /* background-color: pink; */
+}
+.memberjoin-outline{
+   width : 1000px;
+   height : auto;
+   margin : 0 auto;
+}
+.memberjoin-outline>div{
+   text-align: center;
+}
+
+/* 타이틀 */
+.membership-title{
+   margin : 0 auto;
+   width : 1000px;
+   height : 70px;
+   border-bottom : 1px solid #ccc;
+   /* text-align: left; */
+   line-height: 70px;
+   font-size: 27px;
+   font-family: notom;
+   text-indent: 20px;
+}
+/* 회원가입 리스트 */
+.memberjoin-list{
+   margin : 0 auto;
+   width : 800px;
+   height : 660px;
+   padding : 0px;
+   list-style: none;
+   margin-top : 10px;
+   border-bottom : 1px solid #ccc;
+   margin-bottom : 10px;
+}
+.memberjoin-list>li:nth-child(odd){
+   width : 150px;
+   height : 50px;
+   float : left;
+   font-size: 14px;
+   line-height: 50px;
+   text-indent : 10px;
+}
+.memberjoin-list>li:nth-child(even){
+   width : 650px;
+   height : 50px;
+   float : left;
+}
+.memberjoin-list>li>input[type="text"],.memberjoin-list>li>input[type="password"]{
+   margin-top: 5px;
+   width : 300px;
+   height : 40px;
+   border-radius: 5px;
+   border : 1px solid #ccc;
+   text-indent: 10px;
+}
+.memberjoin-list>li>input[type="radio"]{
+   width : 15px;
+   height : 15px;
+   vertical-align: -15px;
+}
+.memberjoin-list>li > label{
+   width : 50px;
+   height : 30px;
+   text-align: center;
+   display : inline-block;
+   vertical-align: -15px;
+}
+.memberjoin-list>li>select{
+   width : 150px;
+   height : 40px;
+   font-size: 13px;
+   border-radius: 5px;
+   border : 1px solid #ccc;
+}
+.memberjoin-addr{
+   width : 600px;
+}
+
+/* 버튼 */
+.memberjoin-list>li>button{
+   width : 150px;
+   height : 40px;
+   border : none;
+   border-radius: 5px;
+   background-color : rgb(255,246,104);
+   /* background: linear-gradient(to bottom, rgb(255,246,104) 0%,rgb(211,192,86) 100%); */
+   font-weight: bold;
+}
+.memberjoin-button{
+   margin-top: 20px;
+   width : 200px;
+   height : 40px;
+   border: none;
+   border-radius: 5px;
+   font-size: 14px;
+   background-color : rgb(255,246,104);
+   /* background: linear-gradient(to bottom, rgb(255,246,104) 0%,rgb(211,192,86) 100%); */
+   font-weight: bold;
+}
+.reset-btn{
+   background-color: rgb(206,220,231);
+   /* background : linear-gradient(to bottom, rgb(206,220,231) 0%,rgb(89,106,114) 100%); */
+   font-weight: bold;
+}
+.memberjoin-list>li>button:hover{
+   box-shadow: 2px 2px 5px #ccc;
+}
+.memberjoin-button:hover{
+   box-shadow: 2px 2px 5px #ccc;
+}
+.reset-btn:hover{
+   box-shadow: 2px 2px 5px #ccc;
+}
+
+/* 보안문자 */
+.security-word{
+   width : 100px;
+   height : 50px;
+   background-image: url('../images/numberbk.png');
+   display : inline-block;
+   overflow: hidden;
+}
+.security-word>ul{
+   margin : 0px;
+   padding : 0px;
+   list-style: none;
+   width : 100px;
+   height : 50px;
+}
+.security-word>ul>li{
+   width : 25px;
+   height : 50px;
+   float : left;
+}
+.security-word>ul>li>img{
+   width : 25px;
+   height : 50px;
+}
+.btn-secure-refresh{
+   background-image: url('../icon/reset.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   border : 1px solid #aaa;
+   border-radius: 5px;
+}
+
+/* 보안정책 */
+.security-policy{
+   width : 1000px;
+   height : 440px;
+}
+.security-policy > ul{
+   margin : 0 auto;
+   width : 750px;
+   height : 400px;
+}
+.security-policy > ul > li{
+   width : 750px;
+   height : 220px;
+}
+.security-policy > ul > li > label{
+   width : 100%;
+   height : 20px;
+   text-align: left;
+   font-size: 16px;
+   line-height: 20px;
+   font-family: notom;
+   text-indent: 10px;
+}
+.security-policy > ul > li > div{
+   width : 100%;
+   height : 180px;
+   border : 1px solid #ccc;
+   overflow: auto;
+   text-align: left;
+   font-size: 14px;
+   padding : 10px;
+   padding-top : 0px;
+   box-sizing: border-box;
+}
+.check{
+   width : 100%;
+   height : 20px;
+   text-align: right;
+   line-height: 20px;
+}
+.check > label{
+   display: inline;
+}
+
+/* 이용약관 */
+.article{
+   font-size: 12px;
+   line-height: 16px;
+   color: #666;
+}
+.article-title{
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 16px;
+}
+.policy_summary{
+   font-size: 12px;
+    line-height: 16px;
+    color: #666;
+}
+
+/* 회원가입 성공 */
+.memberjoin-ok{
+   height : 500px;
+}
+.join-ok{
+   margin : 0 auto;
+   width : 1000px;
+   height : 500px;
+}
+.join-ok > ul{
+   margin : 0 auto;
+   width : 600px;
+   height : 500px;
+   text-align: center;
+}
+.join-ok > ul> li:nth-child(1){
+   height : 200px;
+   line-height: 200px;
+   font-size: 35px;
+   font-family: notom;
+   /* background-color: red; */
+}
+.join-ok > ul> li:nth-child(2){
+   height : 70px;
+   line-height: 70px;
+   font-size: 20px;
+   font-family: notor;
+}
+.join-ok > ul> li:nth-child(3){
+   height : 50px;
+   font-size: 15px;
+   font-family: notor;
+}
+.login{
+   width : 250px;
+   height : 50px;
+   border : none;
+   border-radius: 5px;
+   background-color: rgb(255,246,104);
+   font-family: notor;
+   font-size: 17px;
+}
+.login:hover{
+   box-shadow: 2px 2px 5px #ccc;
+}
+
+/* 아이디중복찾기 */
+.idCheckContent{
+   width : 400px;
+   height : 100px;
+   text-align: center;
+   font-size: 25px;
+   font-family: notom;
+   display : block;
+   line-height: 100px;
+}
+.idCheckNo{
+   width : 400px;
+   height : 100px;
+   font-size: 14px;
+   font-family: notor;
+   text-align: center;
+}
+.id-use-btn{
+   margin-left : 100px;
+   width : 200px;
+   height : 50px;
+   border : none;
+   border-radius: 5px;
+   background-color: rgb(255,246,104);
+}
+.id-no-btn{
+   margin-top : 10px;
+   margin-left : 100px;
+   width : 200px;
+   height : 50px;
+   border : none;
+   border-radius: 5px;
+   background-color: rgb(206,220,231);
+}
+.idCheckNo > font{
+   color : red;
+}

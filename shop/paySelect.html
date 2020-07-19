@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<?php
+$date = date("YmdHis");
+?>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="imagetoolbar" content="no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Cheecle Photo</title>
+   <meta name="title" content="Cheecle Photo">
+   <meta name="description"
+      content="Cheecle Photo,포토샵,일러스트,HTML,CSS,웹퍼블리셔,자바스크립트,제이쿼리,Javascript,Jquery,웹디자이너,웹표준,프론트엔드">
+   <meta name="keywords" content="Cheecle Photo,포토샵,일러스트,HTML,CSS,웹퍼블리셔,자바스크립트,제이쿼리,Javascript,Jquery,웹디자이너,웹표준,프론트엔드">
+   <meta name="publisher" content="유채휘">
+   <meta name="robots" content="index,follow">
+   <link rel="icon" type="image/png" href="./logo/favicon.png">
+   <link rel="canonical" href="http://whi1022.dothome.co.kr/portfolio/shop/index.html">
+   <link rel="stylesheet" type="text/css" href="./css/defalut.css?v=<?php echo $date?>">
+   <link rel="stylesheet" type="text/css" href="./css/productDetails.css?v=<?php echo $date?>">
+   <script src="../../script/jquery.js"></script>
+   <script src="../script/shop.js?v=<?php echo $date?>"></script>
+   <script src="../script/product.js?v=<?php echo $date?>"></script>
+</head>
+<!-- 최상단 -->
+<header class="header">
+   <?php include "header.html"; ?>
+</header>
+<!-- CI & BI or 대메뉴 & search -->
+<nav class="menu">
+   <?php include "menu.html"; ?>
+</nav>
+<!-- 결제선택 -->
+<section>
+   <?php include "payselect-detail.html"; ?>
+</section>
+<!-- 카피라이터 -->
+<footer class="footer">
+   <?php include "footer.html"; ?>
+</footer>
+</body>
+
+</html>

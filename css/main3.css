@@ -1,0 +1,106 @@
+@charset "utf-8";
+@import url("font.css");
+/* Mobile */
+/* Basic set */
+html, body, div, span, label, section, aside, footer, header, nav, video, table, tr, td, th {
+   margin : 0px;
+   padding : 0px;
+   font-size : 100%;
+   font : inherit;
+}
+
+aside, header, main, span, label, footer, nav, section {
+   display : block;
+}
+
+body {
+   line-height: 1;
+   -webkit-text-size-adjust: none; /* chrome, safari */
+   -moz-text-size-adjust: none; /* mozilla, firefox */
+   -ms-text-size-adjust: none; /* ie, edge */
+}
+
+ol, ul, dl {
+   margin : 0px;
+   padding : 0px;
+   list-style: none;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+a:link, a:visited {
+   color : #000;
+   text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+   color : #000;
+   text-decoration: none;
+}
+
+input, button {
+   margin : 0px;
+   padding : 0px;
+}
+
+button {
+   cursor: pointer;
+}
+
+img {
+   width : 100%;
+   height : auto;
+}
+
+/* 사이트 전체 아웃라인 */
+.headercss { min-height: 50px; background-color: green; }
+.banner { clear: both; min-height:150px; }
+.skill { min-height:1800px; }
+.portfolio_se { min-height:500px; }
+.infodiv { min-height: 1200px; }
+.contact { min-height: 800px; }
+
+/* 상단 메뉴 파트 */
+.content { max-width: 560px; min-height: 50px; margin: 0 auto;
+    background-color: yellowgreen;
+}
+.content_ul { display: none; }
+.menu_slider { display: none; position: absolute;
+width: 100%;
+top:50px; z-index: 100; background-color: violet;
+}
+.div_menu { width: 0%; height:100vh; background-color: rgba(0,0,0,0.9);
+position: relative;
+}
+.menu_ul { width:100%; height:100vh; display: none;}
+.menu_ul > li { width:150px; height:40px; line-height: 40px;
+text-indent: 5%; cursor: pointer;
+}
+/* 인포디자인 (자신의 꿈, 미래) */
+.banner_div { width: 100%; position: relative;
+    /* overflow: hidden;*/ 
+    margin: 0 auto; background-color: yellowgreen;
+}
+.banner_ul { position: absolute; }
+    /* fadein, fadeout 사용시 float:left 삭제 */
+.banner_ul > li { float: left; }
+.bimg { width: 100%; }
+
+/* 스킬 소개 부분 */
+.skill_div { width:95%; min-height: 150px; box-sizing: border-box;
+    margin: 0 auto;
+}
+.skill_div > ol { margin: 0 auto; max-width:60%; min-height:200px;
+padding: 0; list-style: none; }
+
+.skill_div > ol > li { width:100%;
+max-height: 40px;   
+border:1px solid black;
+font-size: 13px; text-align: center; line-height: 40px;
+float: left; background-color: rgba(0,0,0,0.8);
+color:#ffffff; border-radius: 10px; margin-top: 5px;
+cursor: pointer; margin-bottom: 5px;
+}
+.skill_div > ol > li:hover { background-color: gray; }

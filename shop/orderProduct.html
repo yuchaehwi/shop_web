@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<?php
+$date = date("YmdHis");
+?>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="./css/productDetails.css?v=<?php echo $date?>">
+   <title>주문하기</title>
+   <script src="../../script/jquery.js"></script>
+   <script src="../script/order.js?v=<?php echo $date?>"></script>
+   <script src="../script/shop.js?v=<?php echo $date?>"></script>
+   <script src="../script/basket.js?v=<?php echo $date?>"></script>
+</head>
+<body>
+    <input type="hidden" value="" id="basketHidden">
+   <p class="order-title">주문하기</p>
+   <div class="order-content">
+      <ul>
+         <li class="font" id="orderTitle">상품명</li>
+         <li id="orderSelect">옵션 : 
+            <select id="orderOptionSelect" onchange="changeOption(this.value);"></select>
+         </li>
+         <li id="orderNum">
+            개수 : 
+            <select id="orderOptionNum" onchange="changeNum(this.value);"></select>
+         </li>
+         <li id="orderPrice">가격 : 30,000원</li>
+      </ul>
+   </div>
+   <div class="order-btn">
+      <button onclick="openBasket('moveBasket');" id="moveBasket">장바구니</button>
+      <button onclick="moveOrderPage();">결제하기</button>
+   </div>
+</body>
+</html>

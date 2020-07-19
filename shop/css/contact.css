@@ -1,0 +1,49 @@
+.contact-outline{
+    margin : 0 auto;
+    width : 1000px;
+    height : 800px;
+}
+.contact-title{
+    margin : 0 auto;
+    width : 100%;
+    height : 100px;
+    text-indent: 10px;
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+    border-bottom: 1px dashed #ccc;
+}
+.contact-input{
+    padding-top : 20px;
+    margin : 0 auto;
+    width : 80%;
+    height : 600px;
+    box-sizing: border-box;
+}
+.contact-input label{
+    display : inline-block;
+    font-family: notor;
+}
+.contact-input select{
+    width : 20%;
+    height : 30px;
+}
+.contact-input input{
+    width : 80%;
+    height : 30px;
+}
+.contact-input textarea{
+    width : 100%;
+    height : 450px;
+    resize: none;
+}
+.contact-input > div{
+    margin-bottom : 15px;
+}
+.contact-input > button{
+    width : 130px;
+    height : 40px;
+    border : none;
+    background-color: #ccc;
+    float : right;
+}

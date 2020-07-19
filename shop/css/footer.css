@@ -1,0 +1,97 @@
+.footer-section{
+   padding-top : 10px;
+   box-sizing: border-box;
+   margin : 0 auto;
+   width : 1000px;
+   height : 180px;
+   display : flex;
+   flex-direction: row;
+   align-content: space-between;
+   border-top : 1px solid #ccc;
+   color : #777777;
+}
+.font-color {
+   color : #000;
+}
+
+/* 사업자 정보 */
+.shop-content{
+   width : auto;
+   height : auto;
+   background-color: transparent;
+   border-right : 1px solid #ccc;
+   flex-grow: 1;
+   text-indent: 10px;
+}
+.shop-content > ul{
+   margin-left : 20px;
+   font-family: notor;
+   font-size: 12px;
+   box-sizing: border-box;
+   float : left;
+}
+.shop-content > ul > li{
+   height : 20px;
+   line-height: 20px;
+}
+.shop-content > ul > li > a{
+   color : #777777;
+}
+.shop-content > ul > li > a:hover{
+   color : #c31c1c;
+}
+.footer-logo{
+   width : 150px;
+   height : 30px;
+   float : left;
+}
+.footer-logo>img{
+   width : 150px;
+}
+
+/* 계좌번호 */
+.shop-bank-account{
+   width : auto;
+   height : auto;
+   border-right: 1px solid #ccc;
+   flex-grow: 1;
+}
+.shop-bank-account > ul{
+   font-family: notor;
+   font-size: 16px;
+   text-align: center;
+}
+.shop-bank-account > ul >li{
+   height : 90px;
+   line-height: 25px;
+}
+.font1{
+   font-size : 14px;
+}
+
+/* ㅇ */
+.shop-call{
+   width : auto;
+   height : auto;
+   /* background-color: royalblue; */
+   flex-grow: 1;
+   position: relative;
+}
+.shop-call > ul{
+   font-size: 16px;
+   font-family: notor;
+}
+.shop-call > ul > li{
+   height : 90px;
+   text-align: center;
+   line-height: 30px;
+}
+.security {
+   width : 50px;
+   position: absolute;
+   right : 0px;
+   bottom : 0px;
+}
+.security2{
+   right : 50px;
+}

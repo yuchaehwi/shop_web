@@ -1,0 +1,57 @@
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./css/defalut.css?v=<?php echo $date?>">
+<link rel="stylesheet" type="text/css" href="./css/membership.css?v=<?php echo $date?>">
+<script src="../js/jquery.js"></script>
+<?php
+    include "../dbinfo.php";
+    $ids = $_GET['ids'];
+    if(!$ids){
+    echo ("<script>alert('올바른 접근 방법이 아닙니다.'); self.close();</script>");
+    }
+    else {
+        $sqls = "select * from shopmb where sid='$ids' order by sidx";
+        $querys = mysqli_query($connect,$sqls);
+        $nums = mysqli_num_rows($querys);
+        if(!$nums){
+?>
+<script>
+   function idUse(){
+      window.opener.idCheckHidden.value = "idCheckUseOk";
+      self.close();
+   }
+   
+   function idNoUse(){
+      window.opener.idCheckHidden.value = "idCheckUseNo";
+      self.close();
+   }
+</script>
+<span class="idCheckContent">해당 아이디는 사용할 수 있습니다.</span>
+<span class="idCheckNo">
+   해당 아이디는 사용이 가능합니다.<br>
+   해당 아이디를 사용하고자 하시면 <font>해당 아이디 사용하기 버튼</font>을<br>
+   변경하고자 하시면 <font>다른 아이디 사용하기 버튼</font>을 눌러주세요.
+</span>
+<button class="id-use-btn" onclick="idUse();">해당 아이디 사용하기</button>
+<button class="id-no-btn" onclick="idNoUse();">다른 아이디 사용하기</button>
+<?php
+        }
+        else{
+?>
+<script>
+   $(function(){
+      
+   })
+</script>
+<span class="idCheckContent">해당 아이디는 사용할 수 없습니다.</span>
+<span class="idCheckNo">
+   해당 아이디는 중복아이디 입니다.<br>
+   회원가입 화면에서 아이디 입력 후<br>
+   <font>아이디 중복체크를 다시 한 번</font> 해주시길 바랍니다.
+</span>
+<button class="id-no-btn" onclick="idNoUse();">다른 아이디 사용하기</button>
+<?php
+        
+        }
+    }
+
+?>

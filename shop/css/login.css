@@ -1,0 +1,103 @@
+.login{
+   height : 500px;
+   /* background-color: #ccc; */
+}
+
+/* 로그인파트 */
+.login-section{
+   margin : 0 auto;
+   width : 400px;
+   height : 500px;
+}
+.login-section > ul{
+   width : 400px;
+   height : 330px;
+   list-style: none;
+}
+.login-section > ul > li{
+   margin-bottom : 10px;
+   height : 50px;
+}
+
+/* 로그인제목 */
+.login-title{
+   font-size: 30px;
+   font-family: notom;
+   text-align: center;
+   line-height: 70px;
+}
+.login-section input{
+   width : 400px;
+   height : 50px;
+   text-indent: 10px;
+   font-size: 12px;
+   border-radius: 5px;
+   border : 1px solid #ccc;
+}
+.login-section button{
+   width : 400px;
+   height : 50px;
+   font-size: 16px;
+   border : none;
+   background-color: #fff668;
+   border-radius: 5px;
+}
+
+/* 로그인버튼 */
+.login-btn{
+   border-bottom: 1px solid #ccc;
+}
+
+/* 로그인메뉴 */
+.login-menu{
+   font-size: 12px;
+   text-align: center;
+   line-height: 50px;
+}
+.login-menu > label{
+   width : 100px;
+   height : 20px;
+   line-height: 20px;
+   text-align: center;
+   display: inline-block;
+   border-right: 1px solid #000;
+   cursor: pointer;
+}
+.login-menu > label:last-child{
+   border: none;
+}
+.login-menu > label:hover{
+   color : #c31c1c;
+}
+
+/* 그 외 로그인 */
+.other-login{
+   width : 400px;
+   height : 170px;
+}
+.other-login > ul{
+   margin-top : 30px;
+   width : 400px;
+   height : 70px;
+   padding-left : 35px;
+}
+.other-login > ul > li{
+   width : 60px;
+   height : 60px;
+   border-radius: 30px;
+   float : left;
+   margin-left : 80px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+}
+.other-login > ul > li:nth-child(1){
+   margin-left : 0px;
+   background-image: url('../icon/google.svg');
+}
+.other-login > ul > li:nth-child(2){
+   background-image: url('../icon/naver.png');
+}
+.other-login > ul > li:nth-child(3){
+   background-image: url('../icon/facebook.png');
+}

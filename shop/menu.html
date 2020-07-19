@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<div class="top-logo">
+   <img src="./logo/logo.png" onclick="move('index');">
+</div>
+<div class="nav-section-background">
+   <div class="nav-section">
+      <ul></ul>
+      <form id="searchForm">
+         <div class="search-section">
+            <input type="text" class="search" name="search" id="search" placeholder="검색어 입력"
+               onkeypress="searchWord(this.value);">
+            <span onclick="searchBtnClick();"><img src="./icon/search.svg"></span>
+         </div>
+      </form>
+      <div class="btn-basket" onclick="move('basket');"></div>
+   </div>
+</div>

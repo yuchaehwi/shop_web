@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<?php 
+   include "session.php";
+?>
+<!-- 최상단 광고배너 -->
+<div class="top-ads">
+   <div class="top-ads-content">회원가입하면 적립금 1,000원이 무조건 지급! 무료배송쿠폰도 받으세요!
+      <span class="btn-top-ads-close" id="TopAdsCloseBtn" onclick="openstop('TopAdsCloseBtn');"></span>
+   </div>
+</div>
+
+<!-- 최상단 메뉴 -->
+<div class="top-nav-background">
+   <div class="top-nav">
+      <span class="top-nav-order">주문·배송</span>
+      <span class="top-nav-register" id="memberJoin" onclick="move('membership');">회원가입</span>
+      
+      <?php
+         if($mname!=""){
+      ?>
+      <span class="top-nav-loginout"><a href="loginout.php">로그아웃</a></span>
+      <?php
+         } else {
+      ?>
+      <span class="top-nav-login" id="topNavLogin" onclick="move('login');">로그인</span>
+      <?php
+         }
+      ?>
+      <span class="top-nav-home" onclick="move('index');">홈</span>
+      <span class="top-nav-bookMark" onclick="bookMark();">즐겨찾기</span>
+   </div>
+</div>
+
+<script src="../script/cookie.js"></script>

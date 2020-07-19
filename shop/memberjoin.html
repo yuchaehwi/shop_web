@@ -1,0 +1,99 @@
+<meta charset="utf-8">
+<script src="//d1p7wdleee1q2z.cloudfront.net/post/search.min.js"></script>
+<div class="membership">
+   <div class="membership-title">회원가입</div>
+   <form id="MemberjoinF" name="mb" method="post" action="memberok.php">
+      <div class="memberjoin-outline">
+         <input type="hidden" name="sec" value="agree">
+         <ul class="memberjoin-list">
+            <li>아이디*</li>
+            <li>
+               <input type="hidden" id="idCheckHidden" value="">
+               <input type="text" id="joinId" name="perid" placeholder="5자 이상 20자 이하로 입력해주세요" maxlength="20">
+               <button id="idCheck">아이디 중복</button>
+            </li>
+            <li>비밀번호*</li>
+            <li>
+               <input type="password" id="joinPass" name="perpw" placeholder="비밀번호를 입력해주세요(최소 5자이상)">
+            </li>
+            <li>비밀번호 확인*</li>
+            <li>
+               <input type="password" id="joinPassCheck" name="perpw2" placeholder="비밀번호를 한번 더 입력해주세요">
+            </li>
+            <li>이름*</li>
+            <li>
+               <input type="text" id="joinName" name="pernm" placeholder="이름을 입력해주세요">
+            </li>
+            <li>이메일*</li>
+            <li>
+               <input type="text" id="joinEmail" name="permail" placeholder="이메일을 입력해주세요">
+            </li>
+            <li id="telSection">휴대폰번호*</li>
+            <li id="telSection">
+               <input type="text" id="joinTel1" style="width:100px;" name="pertel1" maxlength="3">
+               -
+               <input type="text" id="joinTel2" style="width:100px;" name="pertel2" maxlength="4">
+               -
+               <input type="text" id="joinTel3" style="width:100px;" name="pertel3" maxlength="4">
+            </li>
+            <li style="height : 150px;">주소*</li>
+            <li style="height : 150px;">
+               <input id="joinZipcode" class="postcodify_postcode5" name="peraddr1"
+                  style="width : 200px; background-color: #eee;" type="text" readonly>
+               <button type="button" id="btnAddress">주소 찾기</button>
+               <input id="joinAddr1" class="postcodify_address" name="peraddr2"
+                  style="width : 550px; background-color: #eee;" type="text" readonly>
+               <input id="joinAddr2" style="width : 550px;" name="peraddr3" type="text" placeholder="상세주소를 입력해주세요">
+            </li>
+            <li>성별*</li>
+            <li>
+               <input type="radio" id="female" name="persex" value="W"><label for="female">여성</label>
+               <input type="radio" id="male" name="persex" value="M"><label for="male">남성</label>
+            </li>
+            <li>생년월일*</li>
+            <li>
+               <input id="joinBirth" type="text" name="perbir" placeholder="생년월일을 입력해주세요" maxlength="6">
+            </li>
+            <li style="height : 100px;">보안문자*</li>
+            <li style="height : 100px;">
+               <div class="security-word">
+                  <ul> 
+                     <li id="securityNumber0"></li>
+                     <li id="securityNumber1"></li>
+                     <li id="securityNumber2"></li>
+                     <li id="securityNumber3"></li>
+                  </ul>
+               </div>
+               <input type="button" style="width:20px; height:20px;" id="btnSecurity" class="btn-secure-refresh">
+               <input type="text" id="joinSecureChar" placeholder="보안문자를 입력해주세요" style="display : block;">
+            </li>
+         </ul>
+
+         <div class="security-policy">
+            <ul>
+               <li>
+                  <label>이용약관동의*</label>
+                  <div class="security-policy-content1" id="securityPolicyContent1" name="securityPolicyContent1">
+
+                  </div>
+                  <span class="check"><input type="checkbox" id="securityPolicyCheck1"><label
+                        for="securityPolicyCheck1">동의함</label></span>
+               </li>
+               <li>
+                  <label>개인정보 수집 및 이용에 대한 안내*</label>
+                  <div class="security-policy-content2" id="securityPolicyContent2" name="securityPolicyContent2">
+
+                  </div>
+                  <span class="check"><input type="checkbox" id="securityPolicyCheck2"><label
+                        for="securityPolicyCheck2">동의함</label></span>
+               </li>
+            </ul>
+         </div>
+
+         <div>
+            <button class="memberjoin-button" type="submit" id="btnMemberjoin">회원가입</button>
+            <button class="memberjoin-button reset-btn" type="reset">초기화</button>
+         </div>
+      </div>
+   </form>
+</div>

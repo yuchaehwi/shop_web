@@ -1,0 +1,168 @@
+.basket-outline{
+    margin : 0 auto;
+    width : 1000px;
+    height : 460px;
+}
+.basket-title{
+    margin : 0 auto;
+    width : 100%;
+    height : 100px;
+    text-indent: 10px;
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+}
+.basket-content{
+    width : 100%;
+    height : auto;
+}
+.basket-content > ul {
+    width : 100%;
+    height : 40px;
+    font-size: 14px;
+}
+.basket-content > ul > li {
+    width : 237.5px;
+    height : 40px;
+    float : left;
+    text-align: center;
+    line-height: 40px;
+}
+.basket-content-title{
+    border-top : 2px solid #ccc;
+    border-bottom : 2px solid #ccc;
+}
+.basket-content > ul:nth-child(1){
+    font-size: 18px;
+}
+.basket-contents{
+    border-bottom : 1px solid #ccc;
+}
+.basket-btn{
+    width : 100%;
+    height : 35px;
+    padding-top : 5px;
+    box-sizing: border-box;
+}
+.basket-btn>button{
+    width : 100px;
+    height : 30px;
+    float : right;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255,246,104);
+}
+.basket-total{
+    margin-top : 20px;
+    width : 40%;
+    height : 150px;
+    border : 1px solid red;
+    float : right;
+    background-color: #eee;
+    border : 5px double #ccc;
+}
+.basket-total > ul {
+    width : 100%;
+    height : 150px;
+}
+.basket-total > ul > li{
+    width : 100%;
+    height : 50px;
+    line-height: 40px;
+    font-size: 15px;
+    text-indent: 20px;
+}
+
+/* 결제 */
+.payment-outline{
+    margin : 0 auto;
+    width : 1000px;
+    height : auto;
+    border-top : 1px solid #ccc;
+}
+.payer{
+    margin : 0 auto;
+    width : 70%;
+    height : 200px;
+    position: relative;
+}
+.payer > label:nth-child(1) {
+    width : 100%;
+    height : 50px;
+    font-size: 20px;
+    line-height: 50px;
+    padding-left : 80px;
+    box-sizing: border-box;
+}
+.payer-check{
+    width : 150px;
+    top : 20px;
+    right : 60px;
+    position: absolute;
+    font-size: 13px;
+}
+.payer > ul {
+    width : 100%;
+    height : 320px;
+    font-size: 14px;
+}
+.payer > ul > li {
+    height : 40px;
+    line-height: 40px;
+    float : left;
+}
+.payer > ul > li:nth-child(odd){
+    width : 30%;
+    text-indent: 70px;
+}
+.payer > ul > li:nth-child(even){
+    width : 70%;
+}
+.payer input[type="text"] {
+    width : 80%;
+    height : 35px;
+    border-radius: 5px;
+    border : 1px solid #aaa;
+    text-indent: 10px;
+}
+.payer button{
+    width: 130px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255,246,104);
+}
+.pay-part{
+    width : 100%;
+    height : 60px;
+    display: flex;
+    flex-direction: row;
+    padding-left : 60px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+.display{
+    display: none;
+}
+.pay-part > label{
+    margin-right : 20px;
+}
+.pay-btn{
+    margin : 0 auto;
+    width : 70%;
+    height : 80px;
+    text-align: center;
+}
+input[type="button"]{
+    width : 150px;
+    height : 40px;
+    border-radius: 5px;
+    border : none;
+    background-color: rgb(255,246,104);
+    margin-right : 30px;
+}
+input[type="button"]:nth-child(2){
+    margin:0px;
+}

@@ -1,0 +1,38 @@
+<?php
+   include "membercheck.php";
+?>
+<div class="contact-outline">
+    <form action="./faq.html" onsubmit="return contactRegister(this)">
+        <div class="contact-title">
+            1:1 문의
+        </div>
+        <div class="contact-input">
+            <div>
+                <label>문의유형 : </label>
+                <select>
+                    <option value="결제관련">결제관련</option>
+                    <option value="배송관련">배송관련</option>
+                    <option value="사진주문">사진주문</option>
+                    <option value="사진품질">사진품질</option>
+                    <option value="슬림북">슬림북</option>
+                    <option value="압축앨범">압축앨범</option>
+                    <option value="포토북">포토북</option>
+                    <option value="회원정보">회원정보</option>
+                    <option value="기타">기타</option>
+                </select>
+            </div>
+            <div>
+                <label>문의제목 : </label>
+                <input type="text" required>
+            </div>
+            <div>
+                <label>이메일주소 : </label>
+                <input type="text" required>
+            </div>
+            <div>
+                <textarea placeholder="문의 내용을 작성해주세요" required></textarea>
+            </div>
+            <button>등록하기</button>
+        </div>
+    </form>
+</div>

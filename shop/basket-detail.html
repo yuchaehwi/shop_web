@@ -1,0 +1,95 @@
+<script src="//d1p7wdleee1q2z.cloudfront.net/post/search.min.js"></script>
+<div class="basket-outline">
+    <div class="basket-title">
+        장바구니/결제
+    </div>
+    <div class="basket-content" id="basketContent">
+        <ul class="basket-content-title">
+            <li style="width:50px;">선택</li>
+            <li id="text">상품명</li>
+            <li>옵션</li>
+            <li>수량</li>
+            <li>결제가격</li>
+        </ul>
+    </div>
+    <div class="basket-total">
+        <ul>
+            <li style="font-size : 20px">장바구니 총합</li>
+            <li>장바구니 소계 : 0원</li>
+            <li>주문 총합 : 0원</li>
+        </ul>
+    </div>
+</div>
+<div class="payment-outline">
+    <div class="payer">
+        <label>[결제자 정보]</label>
+        <ul>
+            <li>결제자 이름</li>
+            <li><input type="text" id="payerName" required></li>
+            <li>결제자 연락처</li>
+            <li><input type="text" id="payerTel" required></li>
+            <li>결제자 이메일</li>
+            <li><input type="text" id="payerEmail" required></li>
+        </ul>
+    </div>
+    <div class="payer" style="height : 320px;">
+        <label>[주문자 정보]</label>
+        <div class="payer-check"><input type="checkbox" id="payerSame" style="float:left;"><label for="payerSame">결제자정보와 동일</label></div>
+        <ul>
+            <li>주문자 이름</li>
+            <li><input type="text" id="orderName" required></li>
+            <li>주문자 연락처</li>
+            <li><input type="text" id="orderTel" required></li>
+            <li>주문자 이메일</li>
+            <li><input type="text" id="orderEmail" required></li>
+            <li>주문자 배송정보</li>
+            <li style="height : 150px;">
+                <input id="joinZipcode" class="postcodify_postcode5" name="peraddr1" style="width : 150px; background-color: #eee;" type="text" readonly="" required>
+                <button type="button" id="btnAddress">주소 찾기</button>
+                <input id="joinAddr1" class="postcodify_address" name="peraddr2" style="width : 400px; background-color: #eee;" type="text" readonly="" required>
+                <input id="joinAddr2" style="width : 400px;" name="peraddr3" type="text" placeholder="상세주소를 입력해주세요" required>
+             </li>
+        </ul>
+    </div>
+    <div class="payer">
+        <label>[결제 방식]</label>
+        <div class="pay-part">
+            <input type="radio" name="pays" id="card" checked><label for="card">신용카드</label>
+            <input type="radio" name="pays" id="account"><label for="account">가상계좌</label>
+            <input type="radio" name="pays" id="bank"><label for="bank">무통장</label>
+        </div>
+        <div class="pay-part display" id="bankInfo">
+            KB국민은행 580902-01-096913 예금주 : 최지용<br />
+            농협은행 352-0329-2251-03 예금주 : 최지용<br />
+            주문 후 일주일 이내에 입금해주셔야 정상적으로 주문완료됩니다.
+        </div>
+    </div>
+    <div class="pay-btn">
+        <input type="button" value="결제하기" id="payBtn">
+        <input type="button" value="결제취소" id="payReset">
+    </div>
+</div>
+
+<!-- 
+   <div class="paypart">
+      <input type="radio" name="pays" value="CARD" class="payradio">신용카드
+      <input type="radio" name="pays" value="BANK" class="payradio">가상계좌
+      <input type="radio" name="pays" value="PHONE" class="payradio">휴대폰결제
+      <input type="radio" name="pays" value="PASSBANK" class="payradio">무통장
+   </div>
+   <div class="passbank" id="passbank">
+      <ul>
+         <li>입금하실 통장번호
+            <input type="text" name="passback" value="하나은행 : 123-45-168812">
+         </li>
+         <li>입금일자 <input type="text" name="passbackday" value="">
+         </li>
+         <li>입금금액 <input type="text" name="passbackm" value="0">원
+         </li>
+      </ul>
+   </div>
+   <div class="paybtns">
+      <input type="button" value="결제하기" onclick="gopays(1)">
+      <input type="button" value="결제취소" onclick="gopays(2)">
+   </div>
+</div> -->

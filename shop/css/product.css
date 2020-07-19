@@ -1,0 +1,246 @@
+.product-section-background{
+   width : 100%;
+   height : 530px;
+   background-color: #f6f6f6;
+}
+.product-section{
+   margin : 0 auto;
+   width : 1000px;
+   height : 800px;
+}
+.product-category{
+   width : 1000px;
+   height : 30px;
+}
+.product-category > li {
+   width : 100px;
+   height : 30px;
+   line-height: 30px;
+   text-align: center;
+   float : left;
+   font-size: 13px;
+   background-color: #eee;
+   cursor: pointer;
+   font-family: notom;
+}
+.product-category > li:hover{
+   color : #515151;
+   box-shadow : inset 0 -5px 0 #fff668;
+ }
+.product-print{
+   width : 1000px;
+   height : 450px;
+}
+.product-category-title{
+   width : 1000px;
+   height : 50px;
+   text-align: center;
+   line-height: 50px;
+   font-size: 20px;
+   /* background-color: #fff668; */
+   background-color: #eee;
+   font-family: notor;
+   border-top : 1px solid #ccc;
+   border-bottom : 1px solid #ccc;
+   box-sizing: border-box;
+   /* box-shadow: 5px 5px 10px #eee; */
+}
+.product-category-bottom{
+   padding-right : 10px;
+   width : 1000px;
+   height : 50px;
+   text-align: right;
+   line-height: 50px;
+   font-size: 14px;
+   /* background-color: #fff668; */
+   background-color: #eee;
+   font-family: notor;
+   border-top : 1px solid #ccc;
+   border-bottom : 1px solid #ccc;
+   box-sizing: border-box;
+}
+.product-category-bottom > label{
+   width : 100px;
+   height : 50px;
+   display : block;
+   float : right;
+   cursor: pointer;
+}
+.product-category-bottom > label:hover{
+   text-decoration: underline;
+}
+
+/* 미니사진 */
+.product-print-miniPhoto{
+   width : 1000px;
+   height : 400px;
+   list-style: none;
+}
+.product-print-miniPhoto > li{
+   width : 1000px;
+   height : 200px;
+   float: left;
+}
+.product-print-miniPhoto > li > ol{
+   width : 1000px;
+   height : 200px;
+   list-style: none;
+}
+.product-print-miniPhoto > li:nth-child(1) > ol{
+   border-bottom : 1px solid #ccc;
+}
+.product-print-miniPhoto > li > ol > li{
+   width : 333px;
+   height : 200px;
+   float : left;
+   cursor: pointer;
+}
+.product-img{
+   width : 100%;
+   height : 150px;
+   position:relative;
+}
+.product-img > img{
+   position: absolute;
+   top:50%;
+   left:50%;
+}
+.product-content{
+   width:100%;
+   height:50px;
+}
+.product-content > ul{
+   width:100%;
+   height:50px;
+   list-style: none;
+}
+.product-content > ul > li{
+   width:100%;
+   height:25px;
+   text-align:center;
+   line-height: 25px;
+}
+.product-title{
+   font-size: 15px;
+   font-weight: 600;
+}
+.product-price{
+   font-size: 13px;
+}
+.product-price > s{
+   color : red;
+}
+
+/* 일반사진 */
+.product-print-Photo{
+   width : 1000px;
+   height : 400px;
+   list-style: none;
+   display : none;
+}
+.product-print-Photo > li{
+   width : 1000px;
+   height : 200px;
+   float: left;
+}
+.product-print-Photo > li > ol{
+   width : 1000px;
+   height : 200px;
+   list-style: none;
+}
+.product-print-Photo > li:nth-child(1) > ol{
+   border-bottom : 1px solid #ccc;
+}
+.product-print-Photo > li > ol > li{
+   width : 250px;
+   height : 200px;
+   float : left;
+   cursor: pointer;
+}
+.product-content{
+   width:100%;
+   height:50px;
+   /* background-color: aliceblue; */
+}
+.product-photo-content > ul{
+   width:100%;
+   height:50px;
+   list-style: none;
+}
+.product-photo-content > ul > li{
+   width:100%;
+   height:25px;
+   text-align:center;
+   line-height: 25px;
+}
+.product-photo-title{
+   font-size: 15px;
+   font-weight: 600;
+}
+.product-photo-price{
+   font-size: 13px;
+}
+.product-photo-price > s{
+   color : red;
+}
+
+/* 중형사진 */
+.product-print-middlePhoto{
+   width : 1000px;
+   height : 400px;
+   list-style: none;
+   display : none;
+}
+.product-print-middlePhoto > li{
+   width : 1000px;
+   height : 200px;
+   float: left;
+}
+.product-print-middlePhoto > li > ol{
+   width : 1000px;
+   height : 200px;
+   list-style: none;
+}
+.product-print-middlePhoto > li:nth-child(1) > ol{
+   border-bottom : 1px solid #ccc;
+}
+.product-print-middlePhoto > li > ol > li{
+   width : 333px;
+   height : 200px;
+   float : left;
+   cursor: pointer;
+}
+.product-middle-content{
+   width:100%;
+   height:50px;
+}
+.product-middle-content > ul{
+   width:100%;
+   height:50px;
+   list-style: none;
+}
+.product-middle-content > ul > li{
+   width:100%;
+   height:25px;
+   text-align:center;
+   line-height: 25px;
+}
+.product-middle-title{
+   font-size: 15px;
+   font-weight: 600;
+}
+.product-middle-price{
+   font-size: 13px;
+}
+.product-middle-price > s{
+   color : red;
+}
+
+/* 이벤트배너 */
+.event-banner{
+   margin : 0 auto;
+   margin-top : 20px;
+   width : 1000px;
+   height : 100px;
+   background-image: url('../images/event_banner.png');
+}

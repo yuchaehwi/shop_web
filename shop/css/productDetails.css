@@ -1,0 +1,111 @@
+.productDetails{
+    height : auto;
+}
+.product-detail-outline{
+    margin : 0 auto;
+    width : 1000px;
+    height : auto;
+}
+
+/* 카테고리 */
+.product-detail-category{
+    width : 1000px;
+    height : 40px;
+    list-style: none;
+}
+.product-detail-category > li{
+    width : 100px;
+    height : 40px;
+    float : left;
+    text-align: center;
+    line-height: 40px;
+    font-family: notom;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* 상품 이미지 출력 */
+.product-detail-outline > div{
+    position: relative;
+}
+
+/* 상품 버튼 */
+.product-detail-outline > div > button {
+    width : 120px;
+    height : 40px;
+    border-radius: 20px;
+    background-color: #fff668;
+    border : none;
+    position: absolute;
+    font-size: 12px;
+    bottom : 40px;
+}
+.btn1{
+    right : 610px;
+}
+.btn2{
+    right : 430px;
+}
+.btn3{
+    right : 250px;
+}
+.product-detail-outline > div > button:hover{
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+/* 주문하기 */
+.order-title{
+   width : 100%;
+   height : 50px;
+   text-align: center;
+   font-weight: bold;
+   font-size: 25px;
+}
+.order-content{
+   width : 100%;
+   height : 200px;
+}
+.order-content > ul{
+   margin : 0px;
+   padding : 0px;
+   width : 100%;
+   height : 200px;
+   list-style: none;
+}
+.order-content > ul > li {
+   width : 100%;
+   height : 50px;
+   text-align: center;
+   line-height: 50px;
+   font-size: 15px;
+}
+.order-content > ul > li > select {
+   width : 150px;
+   height : 30px;
+}
+.order-btn{
+   width : 100%;
+   height : 100px;
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+}
+.order-btn > button {
+   margin : 0 auto;
+   width : 200px;
+   height : 40px;
+   border-radius: 5px;
+   border : none;
+   background-color: #fff668;
+   margin-bottom : 20px;
+}
+.order-num{
+   width : 50px;
+   height : 30px;
+   text-align: center;
+}
+
+/* 폰트 */
+.font{
+   font-size : 15px;
+}

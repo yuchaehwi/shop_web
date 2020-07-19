@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<form action="loginok.php" method="post" onsubmit="return loginShop(this)" id="loginForm">
+   <div class="login-section">
+      <ul>
+         <li style="height:70px;"><label class="login-title">로그인</label></li>
+         <li><input type="text" name="mbid" placeholder="아이디를 입력해주세요" required></li>
+         <li><input type="password" name="mbpass" placeholder="비밀번호를 입력해주세요" required></li>
+         <li class="login-btn" style="height:70px;"><button>로그인</button></li>
+         <li class="login-menu">
+            <label>아이디 찾기</label>
+            <label>비밀번호 찾기</label>
+            <label onclick="move('membership');">회원가입</label>
+         </li>
+      </ul>
+      <div class="other-login">
+         <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+      </div>
+   </div>
+</form>
